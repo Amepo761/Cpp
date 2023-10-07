@@ -7,20 +7,15 @@
 #include <iostream>
 
 #define SIZE 3
-void createBills(Bill *arr[SIZE]);
+void CreateObj(Bill *arr[SIZE]);
 
-std::string GetInvoiceNumberOfHighestBillAmount(Bill *arr[SIZE]);
+std::string HighestBillAmount(Bill *arr[SIZE]);
 
-float GetBillAmountWithInvoiceNumber(Bill *arr[SIZE], std::string invoiceNumber);
+float BillAmountWithInvoiceNumber(Bill *arr[SIZE], std::string invoiceNumber);
 
-Invoice **GetInvoicesWithBillAmount(Bill *arr[SIZE], float billAmount);
+Invoice **InvoicesWithBillAmount(Bill *arr[SIZE], float billAmount);
 
-void FreeMemory(a *arr[SIZE]);
+void MinMaxBillAmount(Bill *bills[SIZE]);
 
-void checkAllBillsEmpty(Bill *arr[SIZE]);
-
-std::string MaximumbillAmount(Bill *arr[SIZE]);
-
-Invoice MinimumbillAmount(Bill *arr[SIZE]);
-void PrintMaximumAndMinimumBillAmount(Bill *bills[SIZE]);
+void FreeMemory(Bill *arr[SIZE]);
 #endif // FUNCTIONALITIES_H
